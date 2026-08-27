@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "font-family: " Gill Sans ", " Gill Sans MT ", Calibri, " Trebuchet MS ", sans-serif;";
+  background-color: #141517;
+  color: #f1f1f1;
+}
+
+header {
+  position: relative;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 10px 25px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header-mid {
+  position: absolute;
+  left: 50%;
+  width: 400px;
+}
+.menu-btn {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: red;
+}
+.logo {
+  font-style: italic;
+  font-size: 26px;
+  font-weight: bold;
+  background-color: red;
+}
+.nav-bar {
+  display: flex;
+  gap: 15px;
+  margin: 0 10px;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141517;
+  border-radius: 20px;
+  border: 1px solid whitesmoke;
+  padding: 0 15px;
+  width: 100%;
+}
+.search input {
+  padding: 10px;
+  border: none;
+  background-color: #141517;
+  border-radius: 20px;
+  color: whitesmoke;
+  font-weight: 600;
+}
+.search-btn {
+  color: whitesmoke;
+  opacity: 0.4;
+}
+
+.mode-btn {
+  font-size: 20px;
+  font-weight: bold;
+}
+.log-in {
+  background-color: #141517;
+  border-radius: 20px;
+  border: 1px solid whitesmoke;
+  padding: 8px 15px;
+  color: whitesmoke;
+}
+
+/* 사이드바 */
+.side-bar {
+  width: 60px;
+  background-color: teal;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+.menu {
+  border-bottom: wheat 1px solid;
+  padding: 10px 0;
+}
+.menu-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: red;
+  border-radius: 10px;
+  opacity: 0.8;
+  padding: 3px;
+  margin-bottom: 5px;
+}
+.menu-icon {
+  font-size: 20px;
+}
+.menu-name {
+  font-size: 11px;
+  color: whitesmoke;
+}
+.category {
+  border-bottom: wheat 1px solid;
+  padding: 15px 0;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cate-name {
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  opacity: 0.8;
+  line-height: 14px;
+}
+.cate-img img {
+  display: block;
+  border-radius: 10px;
+  margin-top: 10px;
+}
