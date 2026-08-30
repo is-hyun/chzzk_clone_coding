@@ -7,14 +7,15 @@ main {
 }
 /* 사이드바 */
 .side-bar {
-  /* background-color: violet; */
-  width: 60px;
+  background-color: var(--chzzk-black);
+  width: 65px;
   flex-shrink: 0;
   padding: 0 5px;
   display: flex;
   flex-direction: column;
 }
 .menu {
+  padding: 5px 0;
   border-bottom: var(--chzzk-icon-gray) 1px solid;
 }
 .menu-option {
@@ -29,12 +30,14 @@ main {
   margin-bottom: 5px;
 }
 .menu-icon {
-  font-size: 20px;
+  font-size: 25px;
+  margin-bottom: 5px;
 }
 .menu-name {
   font-size: 11px;
   color: var(--chzzk-icon-lightgray);
   word-break: keep-all;
+  margin-bottom: 5px;
 }
 .category {
   border-bottom: var(--chzzk-icon-gray) 1px solid;
@@ -70,4 +73,19 @@ main {
 }
 .off {
   outline: 2px solid var(--chzzk-icon-gray);
+}
+
+.menu-option:hover {
+  cursor: pointer;
+  background-color: var(--chzzk-icon-gray);
+}
+.cate-img img:hover {
+  cursor: pointer;
+  outline: 4px solid var(--chzzk-icon-gray);
+}
+.on:hover {
+  outline: 4px solid var(--chzzk-green);
+}
+.off:hover {
+  outline: 4px solid var(--chzzk-icon-gray);
 }
