@@ -8,11 +8,12 @@
 /* 상단 배너 */
 .top-banner {
   width: 100%;
-  height: 120px;
+  height: 110px;
   background-color: var(--banner-color);
   overflow: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
+  border-right: 1px solid var(--banner-color);
 }
 .banner-track {
   display: flex;
@@ -21,25 +22,104 @@
   transition: transform 0.3s ease;
 }
 .banner {
-  flex: 0 0 calc(100% / 5);
-  /* width: calc(100% / 5); */
+  flex: 0 0 25%;
+  width: 25%;
   border-right: 1px solid var(--chzzk-icon-lightgray);
   height: 100%;
   display: flex;
-  padding: 15px;
+  padding: 20px;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 .text-area {
-  height: 100%;
   /* padding: 0 10px; */
-  background-color: red;
+  /* background-color: red; */
   color: var(--chzzk-white);
+
   display: flex;
   flex-direction: column;
+  height: 100%;
+  flex: 1;
+
+  min-width: 115px;
+  padding-right: 8px;
+  overflow: hidden;
+}
+.banner-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+
+  line-height: 1.3;
+  flex-shrink: 0;
+  word-break: keep-all;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}
+
+.banner-desc {
+  font-size: 14px;
+  color: var(--chzzk-icon-lightgray);
+
+  line-height: 1.2;
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
 }
 .banner-info {
-  background-color: blue;
+  /* background-color: blue; */
   margin-top: auto;
   color: var(--chzzk-green);
+  font-size: 14px;
+  font-weight: 600;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}
+.banner img {
+  width: 60px; /* 원하는 크기로 고정 */
+  height: 60px;
+  object-fit: cover; /* 비율 유지하며 꽉 차게 */
+  border-radius: 6px;
+  flex-shrink: 0; /* ⭐ 창이 아무리 줄어들어도 이미지는 절대 찌그러지거나 없어지지 않음 */
+}
+
+@media (min-width: 1900px) {
+  .banner {
+    flex: 0 0 20%;
+    width: 20%;
+  }
+  .banner:nth-child(5n) {
+    border-right: none !important;
+  }
+}
+@media (max-width: 1900px) {
+  .banner {
+    flex: 0 0 25%;
+    width: 25%;
+  }
+  .banner:nth-child(4n) {
+    border-right: none !important;
+  }
+}
+@media (max-width: 1400px) {
+  .banner {
+    flex: 0 0 calc(100% / 3);
+    width: calc(100% / 3);
+  }
+  .banner:nth-child(3n) {
+    border-right: none !important;
+  }
+}
+.banner:hover {
+  background-color: var(--banner-color-hover);
+  cursor: pointer;
 }
