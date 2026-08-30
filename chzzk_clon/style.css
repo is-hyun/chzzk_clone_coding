@@ -4,6 +4,8 @@
   --chzzk-black: #141517;
   --chzzk-icon-lightgray: #9da5b6;
   --chzzk-icon-gray: #333;
+  --banner-color: #1e2022;
+  --banner-color-hover: #292b2d;
 }
 * {
   margin: 0;
@@ -22,7 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 80px;
   padding: 10px 25px;
 }
 
@@ -48,15 +50,16 @@ header {
 .logo {
   color: white;
   font-style: italic;
-  font-size: 26px;
+  font-size: 32px;
   font-weight: bold;
 }
 .nav-bar {
   display: flex;
-  gap: 15px;
+  gap: 20px;
   margin: 0 10px;
 }
 .nav-bar a {
+  font-size: 20px;
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -96,18 +99,24 @@ header {
   font-size: 14px;
 }
 
+main {
+  background-color: teal;
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  padding: 5px;
+}
 /* 사이드바 */
 .side-bar {
+  /* background-color: violet; */
   width: 60px;
-  /* background-color: teal; */
+  flex-shrink: 0;
   padding: 0 5px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
 }
 .menu {
   border-bottom: var(--chzzk-icon-gray) 1px solid;
-  padding: 10px 0;
 }
 .menu-option {
   display: flex;
@@ -162,4 +171,50 @@ header {
 }
 .off {
   outline: 2px solid var(--chzzk-icon-gray);
+}
+
+/* 메인 콘텐츠 영역 */
+.main-area {
+  /* background-color: violet; */
+  flex: 1;
+  padding: 5px 10px;
+  overflow-y: auto;
+}
+/* 상단 배너 */
+.top-banner {
+  width: 100%;
+  height: 120px;
+  background-color: var(--banner-color);
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.banner-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transfom 0.3s ease;
+}
+.banner {
+  flex: 0 0 calc(100% / 5);
+  /* width: calc(100% / 5); */
+  border-right: 1px solid var(--chzzk-icon-lightgray);
+  height: 100%;
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-area {
+  height: 100%;
+  /* padding: 0 10px; */
+  background-color: red;
+  color: var(--chzzk-white);
+  display: flex;
+  flex-direction: column;
+}
+.banner-info {
+  background-color: blue;
+  margin-top: auto;
+  color: var(--chzzk-green);
 }
