@@ -1,0 +1,45 @@
+/* 메인 콘텐츠 영역 */
+.main-area {
+  /* background-color: violet; */
+  flex: 1;
+  padding: 5px 10px;
+  overflow-y: auto;
+}
+/* 상단 배너 */
+.top-banner {
+  width: 100%;
+  height: 120px;
+  background-color: var(--banner-color);
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.banner-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+.banner {
+  flex: 0 0 calc(100% / 5);
+  /* width: calc(100% / 5); */
+  border-right: 1px solid var(--chzzk-icon-lightgray);
+  height: 100%;
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-area {
+  height: 100%;
+  /* padding: 0 10px; */
+  background-color: red;
+  color: var(--chzzk-white);
+  display: flex;
+  flex-direction: column;
+}
+.banner-info {
+  background-color: blue;
+  margin-top: auto;
+  color: var(--chzzk-green);
+}
