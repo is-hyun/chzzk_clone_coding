@@ -1,0 +1,19 @@
+:root {
+  --chzzk-green: #00ffa3;
+  --chzzk-white: #dfe2ea;
+  --chzzk-black: #141517;
+  --chzzk-icon-lightgray: #9da5b6;
+  --chzzk-icon-gray: #333;
+  --banner-color: #1e2022;
+  --banner-color-hover: #292b2d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: var(--chzzk-black);
+  color: #f1f1f1;
+}

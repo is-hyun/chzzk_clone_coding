@@ -1,0 +1,80 @@
+header {
+  position: relative;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 10px 25px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header-mid {
+  position: absolute;
+  left: 50%;
+  width: 400px;
+}
+.menu-btn {
+  font-size: 20px;
+  font-weight: bold;
+}
+.logo {
+  color: white;
+  font-style: italic;
+  font-size: 32px;
+  font-weight: bold;
+}
+.nav-bar {
+  display: flex;
+  gap: 20px;
+  margin: 0 10px;
+}
+.nav-bar a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--chzzk-black);
+  border-radius: 20px;
+  border: 1px solid var(--chzzk-icon-lightgray);
+  padding: 0 15px;
+  width: 100%;
+}
+.search input {
+  padding: 10px;
+  border: none;
+  background-color: var(--chzzk-black);
+  border-radius: 20px;
+  color: var(--chzzk-icon-lightgray);
+  font-weight: 600;
+}
+.search-btn {
+  color: var(--chzzk-icon-lightgray);
+}
+
+.mode-btn {
+  font-size: 20px;
+  font-weight: bold;
+}
+.log-in {
+  background-color: var(--chzzk-black);
+  border-radius: 20px;
+  border: 1px solid var(--chzzk-icon-lightgray);
+  padding: 8px 16px;
+  color: var(--chzzk-white);
+  font-size: 14px;
+}
