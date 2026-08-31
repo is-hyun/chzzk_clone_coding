@@ -13,6 +13,12 @@ main {
   padding: 0 5px;
   display: flex;
   flex-direction: column;
+
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+}
+.side-bar::-webkit-scrollbar {
+  display: none;
 }
 .menu {
   padding: 5px 0;
