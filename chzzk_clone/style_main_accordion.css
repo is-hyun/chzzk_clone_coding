@@ -6,6 +6,7 @@
   overflow: hidden;
   gap: 0;
   background-color: var(--chzzk-black);
+  margin-bottom: 20px;
 }
 
 .live-card {
@@ -56,23 +57,24 @@
   font-weight: bold;
 }
 .view-badge {
-  background-color: var(--chzzk-black);
+  background-color: var(--banner-color);
   border-radius: 5px;
   padding: 3px;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
 }
 .ms-title {
   font-weight: bold;
   font-size: 24px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 
-  /*
-  width: 100%;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
 }
 .ms-profile {
   display: flex;
@@ -88,14 +90,58 @@
 }
 .ms-name {
   color: white;
+  font-size: 20px;
 }
 .ms-cate {
   color: var(--chzzk-green);
 }
+
 .live-accordion:not(:hover) .live-card:first-child {
   flex: 4.5;
   z-index: 10;
   border: 4px solid var(--chzzk-green);
+
+  .ms-title {
+    font-size: 24px;
+  }
+  .ms-profile img {
+    display: inline-block;
+  } /* 원래 디스플레이 속성에 맞게 조절 가능 */
+  .ms-name {
+    font-size: 20px;
+  }
+  .ms-cate {
+    display: inline-block;
+  }
+  .dot {
+    display: inline-block;
+  }
+  .live-badge {
+    display: inline-block;
+  }
+  .live-mark {
+    display: none;
+  }
+}
+.live-card:not(:hover) {
+  .ms-title {
+    font-size: 18px;
+  }
+  .ms-profile img {
+    display: none;
+  }
+  .ms-name {
+    font-size: 16px;
+  }
+  .ms-cate {
+    display: none;
+  }
+  .dot {
+    display: none;
+  }
+  .live-badge {
+    display: none;
+  }
 }
 .live-card:hover {
   flex: 4.5;
@@ -119,12 +165,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0.4) 50%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%);
   /* transition: background 0.4s ease; */
 }
 .live-card:hover::after,
