@@ -6,6 +6,7 @@
   overflow: hidden;
   gap: 0;
   background-color: var(--chzzk-black);
+  margin-bottom: 20px;
 }
 
 .live-card {
